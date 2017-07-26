@@ -12,6 +12,10 @@
 		E05493591F223733001109A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05493571F223733001109A8 /* Main.storyboard */; };
 		E054935B1F223733001109A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E054935A1F223733001109A8 /* Assets.xcassets */; };
 		E054935E1F223733001109A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E054935C1F223733001109A8 /* LaunchScreen.storyboard */; };
+		E08575C61F23942A003E5931 /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08575C51F23942A003E5931 /* musicViewController.swift */; };
+		E0901C5F1F27D3AD005A9B0A /* photoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0901C5E1F27D3AD005A9B0A /* photoViewController.swift */; };
+		E0FC6B9F1F279F8B0024E797 /* discography.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FC6B9D1F279F8B0024E797 /* discography.storyboard */; };
+		E0FC6BA21F27ADBD0024E797 /* members.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FC6BA01F27ADBD0024E797 /* members.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E054935A1F223733001109A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E054935D1F223733001109A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E054935F1F223733001109A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E08575C51F23942A003E5931 /* musicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
+		E0901C5E1F27D3AD005A9B0A /* photoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoViewController.swift; sourceTree = "<group>"; };
+		E0FC6B9E1F279F8B0024E797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/discography.storyboard; sourceTree = "<group>"; };
+		E0FC6BA11F27ADBD0024E797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/members.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,11 @@
 			children = (
 				E05493531F223733001109A8 /* AppDelegate.swift */,
 				E05493551F223733001109A8 /* ViewController.swift */,
+				E08575C51F23942A003E5931 /* musicViewController.swift */,
 				E05493571F223733001109A8 /* Main.storyboard */,
+				E0FC6BA01F27ADBD0024E797 /* members.storyboard */,
+				E0FC6B9D1F279F8B0024E797 /* discography.storyboard */,
+				E0901C5E1F27D3AD005A9B0A /* photoViewController.swift */,
 				E054935A1F223733001109A8 /* Assets.xcassets */,
 				E054935C1F223733001109A8 /* LaunchScreen.storyboard */,
 				E054935F1F223733001109A8 /* Info.plist */,
@@ -124,6 +136,8 @@
 			files = (
 				E054935E1F223733001109A8 /* LaunchScreen.storyboard in Resources */,
 				E054935B1F223733001109A8 /* Assets.xcassets in Resources */,
+				E0FC6BA21F27ADBD0024E797 /* members.storyboard in Resources */,
+				E0FC6B9F1F279F8B0024E797 /* discography.storyboard in Resources */,
 				E05493591F223733001109A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05493561F223733001109A8 /* ViewController.swift in Sources */,
+				E0901C5F1F27D3AD005A9B0A /* photoViewController.swift in Sources */,
 				E05493541F223733001109A8 /* AppDelegate.swift in Sources */,
+				E08575C61F23942A003E5931 /* musicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +173,22 @@
 				E054935D1F223733001109A8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E0FC6B9D1F279F8B0024E797 /* discography.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0FC6B9E1F279F8B0024E797 /* Base */,
+			);
+			name = discography.storyboard;
+			sourceTree = "<group>";
+		};
+		E0FC6BA01F27ADBD0024E797 /* members.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0FC6BA11F27ADBD0024E797 /* Base */,
+			);
+			name = members.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +344,7 @@
 				E05493641F223733001109A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

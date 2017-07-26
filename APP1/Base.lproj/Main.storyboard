@@ -1,26 +1,447 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DGN-Ge-DlI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Chronicle-->
+        <scene sceneID="23e-qK-GHN">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="F8L-aL-Wss" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chronicle" image="search" id="ZY4-cf-erk"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zXZ-X1-5Ml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3Rp-nh-viQ" kind="relationship" relationship="rootViewController" id="J1f-k9-GcL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22H-by-Bug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1985" y="-3827"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="FFN-b7-gW7">
+            <objects>
+                <viewController id="JDb-O1-h9z" customClass="photoViewController" customModule="APP1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="TWp-OX-5zn"/>
+                        <viewControllerLayoutGuide type="bottom" id="9M9-6c-Qte"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="LFi-1k-bJR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sequence-01Still001" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-VF-AOo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nY-3S-oWt">
+                                <rect key="frame" x="0.0" y="215" width="375" height="403"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Collision_Course" translatesAutoresizingMaskIntoConstraints="NO" id="66J-Uw-KbG">
+                                        <rect key="frame" x="9" y="141" width="175" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LINKIN-PARK-group LP1671" translatesAutoresizingMaskIntoConstraints="NO" id="4d7-8e-h2Q">
+                                        <rect key="frame" x="192" y="8" width="175" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hybird_Theory" translatesAutoresizingMaskIntoConstraints="NO" id="PCm-W7-O9Z">
+                                        <rect key="frame" x="9" y="8" width="175" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="下載" translatesAutoresizingMaskIntoConstraints="NO" id="4uK-7l-FXm">
+                                        <rect key="frame" x="8" y="266" width="359" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="linkinpark" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-xr-tdh">
+                                <rect key="frame" x="313" y="108" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Linkin Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgI-L1-VMF">
+                                <rect key="frame" x="185" y="123" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11K Followers-Following 10K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNP-we-bjK">
+                                <rect key="frame" x="101" y="137" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Ws-n57">
+                                <rect key="frame" x="10" y="177" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Camera Roll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENw-Im-1jg">
+                                <rect key="frame" x="115" y="177" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Public">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX3-nt-CxM">
+                                <rect key="frame" x="204" y="177" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Albums">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-48-LNy">
+                                <rect key="frame" x="301" y="177" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Group">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="esq-O2-jxD" kind="presentation" modalTransitionStyle="flipHorizontal" id="0CC-u9-TTm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="camera" id="Ae0-8b-9Oh"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Puz-9E-hNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1481" y="-4976"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Kq-He-ufA">
+            <objects>
+                <viewController id="esq-O2-jxD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="laS-Dq-pPu"/>
+                        <viewControllerLayoutGuide type="bottom" id="UQf-US-Y5U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FPe-he-yOR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sequence-01Still001" translatesAutoresizingMaskIntoConstraints="NO" id="JA9-r9-Tky">
+                                <rect key="frame" x="0.0" y="20" width="375" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZu-m1-GhY">
+                                <rect key="frame" x="7" y="182" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Camera Roll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sba-4G-qBQ">
+                                <rect key="frame" x="112" y="182" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Public">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KIL-cL-stg" kind="unwind" unwindAction="gobackToPhotosPageWithSegue:" id="tXz-Sf-CgV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPh-Ka-VnJ">
+                                <rect key="frame" x="201" y="182" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Albums">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-PI-Rhi">
+                                <rect key="frame" x="296" y="182" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Group">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnV-RZ-IhF">
+                                <rect key="frame" x="7" y="209" width="361" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Linkin-Park-in-concert-at-the-Susquehanna-Bank-Center-New-Jersey-America-15-Aug-2014" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-pG-d9L">
+                                        <rect key="frame" x="184" y="8" width="175" height="263"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Sh-0c-DEm">
+                                        <rect key="frame" x="1" y="543" width="172" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyT-Vo-n7K">
+                                        <rect key="frame" x="185" y="543" width="174" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfG-fi-FF4">
+                                        <rect key="frame" x="1" y="666" width="358" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hqdefault" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-IR-3ru">
+                                        <rect key="frame" x="1" y="146" width="175" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images (1)" translatesAutoresizingMaskIntoConstraints="NO" id="n1G-AY-UFs">
+                                        <rect key="frame" x="0.0" y="8" width="175" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chester-bennington-death-reactions-759" translatesAutoresizingMaskIntoConstraints="NO" id="f2Y-pq-Ctf">
+                                        <rect key="frame" x="153" y="279" width="206" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="HB0-dd-yqm">
+                                        <rect key="frame" x="8" y="292" width="139" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M9C-Da-6h8">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Photos" image="camera" id="wzO-tu-WRA"/>
+                                    <tabBarItem title="Biography" image="text-left" id="r3c-eD-gl1"/>
+                                    <tabBarItem title="Discography" image="bell" id="Zrm-XQ-rOB"/>
+                                    <tabBarItem title="Members" image="man" id="peU-Qy-lk7"/>
+                                    <tabBarItem title="Chronicle" image="search" id="uCv-o2-hyW"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Linkin Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59T-d9-z45">
+                                <rect key="frame" x="194" y="126" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11K Followers-Following 10K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6n-J0-RxI">
+                                <rect key="frame" x="101" y="143" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="linkinpark" translatesAutoresizingMaskIntoConstraints="NO" id="QtQ-2d-6FT">
+                                <rect key="frame" x="309" y="111" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="fRd-6d-U7h"/>
+                        <barButtonItem title="Item" id="5Zq-a3-OLK"/>
+                        <barButtonItem title="Item" id="Uiq-u1-5mN"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QP5-ZN-wIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KIL-cL-stg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1098" y="-5158"/>
+        </scene>
+        <!--Biography-->
+        <scene sceneID="gj1-Qj-Ucj">
+            <objects>
+                <navigationController id="6a8-w6-3Yo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Biography" image="text-left" id="tdg-fc-By8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l6L-ec-PFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YKr-eQ-mrM" kind="relationship" relationship="rootViewController" id="jAK-cb-oCu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ib-oB-ZbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967" y="-4204"/>
+        </scene>
+        <!--Chronicle-->
+        <scene sceneID="iQ9-K1-jEb">
+            <objects>
+                <viewController id="3Rp-nh-viQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bag-yC-gqq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gyh-7m-Qa4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FEY-aL-FiM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Any-VM-ot1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-JO-gtw">
+                                <rect key="frame" x="30" y="103" width="311" height="373"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Linkin Park combines elements of rock music, hip hop and electronica, and have been categorized as alternative metal and rap rock by AllMusic.They are also tagged as rap rock by About.com.Despite also being characterized as nu metal,the band never considered themselves as such.Their MusicMight biography lists them as alternative rock, nu metal and rap metal.WatchMojo.com identifies them as alternative rock, electronic rock and industrial rock,while Billboard characterizes them as alternative metal and electronic rock.
+Both Hybrid Theory and Meteora combine the alternative metal,nu metal,and rap rock sound with influences and elements from hip hop, alternative rock, and electronica, utilizing programming and synthesizers. William Ruhlmann from AllMusic regarded it as "a Johnny-come-lately to an already overdone musical style,"whereas Rolling Stone described their song "Breaking the Habit" as "risky, beautiful art".
+
+In Minutes to Midnight the band experimented with their established sound and drew influences from a wider and more varied range of genres and styles, a process Los Angeles Times compares to a stage in U2's work.In it, only two of the songs feature rapping, and the majority of the album can be considered alternative rock.NME magazine's Dan Silver criticized the band's approach, calling it the "sound of a band trying and failing to forge a new identity", and referring to the song "Hands Held High", a song about terrorist attacks and war, as "far and away the funniest thing you will hear all year".
+
+The vocal interplay between Chester Bennington and Mike Shinoda plays as a major part within Linkin Park's music, with Bennington being the lead vocalist and Shinoda as the rapping vocalist. On Linkin Park's third album, Minutes to Midnight, Shinoda sings lead vocals on "In Between", "Hands Held High", and on the B-side "No Roads Left". On numerous songs from band's fourth album, A Thousand Suns, such as the album's four singles ("The Catalyst", "Waiting for the End", "Burning in the Skies", "Iridescent"), both Shinoda and Bennington sing. On most of the record's tracks, the band notably used electronic drumbeats along with outro drumbeats. The album has been regarded as a turning point in the band's musical career, having a stronger emphasis on electronica.James Montgomery, of MTV, compared the record to Radiohead's Kid A,while Jordy Kasko of Review, Rinse, Repeat likened the album to both Kid A and Pink Floyd's landmark album The Dark Side of the Moon.Shinoda stated that he and the other band members were deeply influenced by Chuck D and Public Enemy. He elaborated: "Public Enemy were very three-dimensional with their records because although they seemed political, there was a whole lot of other stuff going on in there too. It made me think how three-dimensional I wanted our record to be without imitating them of course, and show where we were at creatively".One of the record's political elements is its samples of notable speeches by American political figures.
+
+Their fifth album, Living Things, is also an electronic-heavy album, but includes other influences, resulting in a harder sound by comparison.The band returned to a heavier sound compared to their last three albums on The Hunting Party, which was described as an alternative metal and hard rock album.Their seventh album, One More Light, was described as pop,pop rock and electropop.
+
+Linkin Park's influences include Nine Inch Nails, Deftones, The Roots and Aphex Twin.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chronicle" id="qJk-GY-Mqo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9x-iv-jJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2983.1999999999998" y="-4337.1814092953528"/>
+        </scene>
+        <!--Biography-->
+        <scene sceneID="8q0-kz-k0m">
+            <objects>
+                <viewController id="YKr-eQ-mrM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jHA-qo-kt7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Krm-bz-Y82"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sv7-PM-rzV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="F42-MH-1Si">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-fJ-nwY">
+                                <rect key="frame" x="16" y="72" width="218" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="W36-dp-IEk">
+                                <rect key="frame" x="16" y="139" width="343" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Linkin Park is an American rock band from Agoura Hills, California. Formed in 1996, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified Diamond by the RIAA in 2005 and multi-Platinum in several other countries.Their following studio album Meteora continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work.
+
+Having adapted nu metal and rap metal to a radio-friendly yet densely layered style in Hybrid Theory and Meteora, the band explored other genres in their next studio album, Minutes to Midnight (2007).The album topped the Billboard charts and had the third-best debut week of any album that year.[8][9] The band continued to explore a wider variation of musical types in their fourth album, A Thousand Suns (2010), layering their music with more electronic sounds and beats. Their fifth album, Living Things (2012), combines musical elements from all of their previous records. Their sixth album, The Hunting Party (2014), returned to a heavier rock sound. Their seventh album One More Light, a more electronic and pop-oriented record, was released on May 19, 2017. Lead singer Chester Bennington died two months after the album's release.
+
+In 2003, MTV2 named Linkin Park the sixth-greatest band of the music video era and the third-best of the new millennium.Billboard ranked Linkin Park No. 19 on the Best Artists of the Decade chart.In 2012, the band was voted as the greatest artist of the 2000s in a Bracket Madness poll on VH1.In 2014, the band was declared as the Biggest Rock Band in the World Right Now by Kerrang! Linkin Park has sold over 70 million albums worldwide and has won two Grammy Awards</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Biography" id="xjC-R7-LYu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYX-DM-Ces" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2100" y="-4294.9025487256376"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6OU-Ui-0nZ">
+            <objects>
+                <tabBarController id="DGN-Ge-DlI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="ETf-P3-2w5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JDb-O1-h9z" kind="relationship" relationship="viewControllers" id="ySs-si-pXN"/>
+                        <segue destination="6a8-w6-3Yo" kind="relationship" relationship="viewControllers" id="huj-Aa-cxA"/>
+                        <segue destination="NxR-Oo-iOC" kind="relationship" relationship="viewControllers" id="wn8-zW-Pah"/>
+                        <segue destination="hQA-QH-I5O" kind="relationship" relationship="viewControllers" id="95v-dx-roR"/>
+                        <segue destination="F8L-aL-Wss" kind="relationship" relationship="viewControllers" id="Ays-Ro-pQI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4J-6X-bZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2318" y="-5180"/>
+        </scene>
+        <!--discography-->
+        <scene sceneID="aZa-YO-jVB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="discography" id="NxR-Oo-iOC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discography" image="bell" id="Yzg-jo-tSC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2v-35-oLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2510" y="-4526"/>
+        </scene>
+        <!--members-->
+        <scene sceneID="CUG-NZ-ehJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="members" id="hQA-QH-I5O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Members" image="man" id="znD-tH-DcO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yw0-c9-R6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2815" y="-4525"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Collision_Course" width="300" height="266"/>
+        <image name="Hybird_Theory" width="250" height="250"/>
+        <image name="LINKIN-PARK-group LP1671" width="400" height="600"/>
+        <image name="Linkin-Park-in-concert-at-the-Susquehanna-Bank-Center-New-Jersey-America-15-Aug-2014" width="615" height="853"/>
+        <image name="Sequence-01Still001" width="1168" height="657"/>
+        <image name="bell" width="30" height="30"/>
+        <image name="bg" width="650" height="602"/>
+        <image name="bg2" width="1131" height="707"/>
+        <image name="camera" width="30" height="30"/>
+        <image name="chester-bennington-death-reactions-759" width="759" height="422"/>
+        <image name="hqdefault" width="480" height="360"/>
+        <image name="images (1)" width="310" height="163"/>
+        <image name="linkinpark" width="400" height="400"/>
+        <image name="logo" width="400" height="172"/>
+        <image name="man" width="30" height="30"/>
+        <image name="maxresdefault" width="1280" height="720"/>
+        <image name="search" width="30" height="30"/>
+        <image name="text-left" width="30" height="30"/>
+        <image name="下載" width="330" height="153"/>
+    </resources>
 </document>
